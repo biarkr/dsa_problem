@@ -14,7 +14,6 @@ using namespace std;
 int main () {
 	int nums[]={1, 0, 1, 0, 1, 0, 0, 1};
 	int i=0, j=sizeof(nums)/sizeof(nums[0]) - 1;
-	cout << "j = " << j << endl;
 
 	while(i < j) {
 		if (nums[i] == 0) {
