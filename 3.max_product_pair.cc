@@ -17,12 +17,13 @@
  *
  */
 #include<iostream>
+#include<climits>
 using namespace std;
 
 int main() {
 	int nums[]={-10, -3, 5, 6, -2};
 	int n=sizeof(nums)/sizeof(nums[0]);
-	int sum=INT_MIN;
+	int product=INT_MIN;
 	int temp;
 	if(n < 2) {
 		cout << "(-1, -1)" << endl;
@@ -31,8 +32,8 @@ int main() {
 	else {
 		for(int i=0; i<n-1; i++) {
 			for(int j=i+1; j<n; j++) {
-				if(sum <= (temp = nums[i]*nums[j])) {
-					sum = temp;
+				if(product <= (temp = nums[i]*nums[j])) {
+					product = temp;
 					cout << "(" << nums[i]<<", " << nums[j] << ") ";
 				}
 			}
