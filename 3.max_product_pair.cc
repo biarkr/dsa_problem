@@ -22,10 +22,10 @@ using namespace std;
 int main() {
 	int nums[]={-10, -3, 5, 6, -2};
 	int n=sizeof(nums)/sizeof(nums[0]);
-	int sum=0;
+	int sum=INT_MIN;
 	int temp;
-	if(n < 1) {
-		cout << "(-1," << " -1)" << endl;
+	if(n < 2) {
+		cout << "(-1, -1)" << endl;
 		return -1;
 	}
 	else {
