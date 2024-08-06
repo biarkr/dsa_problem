@@ -17,9 +17,9 @@ using namespace std;
 /*v.1 brute force method, the time complexcity is O(n^2) 
  
 int singleNums(int nums[], int n) {
-	int count=1;
 	for(int i=0; i<n; i++) {
-		for(int j=i+1; j<n; j++) {
+		int count = 0;
+		for(int j=0; j<n; j++) {
 			if(nums[i]==nums[j]) 
 				count++;
 		}
