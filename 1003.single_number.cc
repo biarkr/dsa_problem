@@ -14,7 +14,7 @@
 #include<algorithm>
 using namespace std;
 
-/*v.1 brute force method, the time complexcity is O(n^2) 
+/*v1. brute force method, the time complexity is O(n^2) 
  
 int singleNums(int nums[], int n) {
 	for(int i=0; i<n; i++) {
@@ -51,7 +51,7 @@ int singleNums(int nums[], int n) {
 v2. ends here  */
 
 
-
+/* v3. uses xor operator, time complexity o(n) */
 int singleNums(int nums[], int n) {
 	int m=0;
 	for(int i=0; i<n; i++) {
