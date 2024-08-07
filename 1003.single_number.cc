@@ -55,7 +55,7 @@ v2. ends here  */
 int singleNums(int nums[], int n) {
 	int m=0;
 	for(int i=0; i<n; i++) {
-		m=m+nums[i];
+		m=m^nums[i];
 	}
 	cout << m << endl;
 	return 0;
